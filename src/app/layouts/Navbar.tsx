@@ -77,9 +77,10 @@ export default function Navbar() {
 
         {/* Desktop actions */}
         <div className="hidden lg:flex items-center gap-3">
-          <ThemeToggle />
           {/* Language Toggle */}
           <LangSelect value={activeLanguage} onChange={handleLangChange} />
+
+          <ThemeToggle />
         </div>
 
         {/* Mobile hamburger */}
@@ -119,12 +120,13 @@ export default function Navbar() {
 
             <div className="px-4 pt-4 border-t border-gray-100 dark:border-gray-800">
               <div className="flex items-center gap-3">
-                <ThemeToggle />
                 {/* Language Toggle */}
                 <LangSelect
                   value={activeLanguage}
                   onChange={handleLangChange}
                 />
+
+                <ThemeToggle />
               </div>
             </div>
 
