@@ -4,8 +4,8 @@ export const HELM_INSTALL_COMMAND = `helm repo add rustcost https://rustcost.git
 helm repo update
 helm upgrade --install rustcost rustcost/rustcost -n rustcost --create-namespace --version 1.0.0-dev.14`;
 
-export const CORE_IMAGE_NAME = "kimc1992/rustcost-core";
-export const DASHBOARD_IMAGE_NAME = "kimc1992/rustcost-dashboard";
+export const CORE_IMAGE_NAME = "rustcost/core";
+export const DASHBOARD_IMAGE_NAME = "rustcost/dashboard";
 
 export const CORE_REPOSITORY_URL = "https://github.com/rustcost/rustcost-core";
 export const DASHBOARD_REPOSITORY_URL =
